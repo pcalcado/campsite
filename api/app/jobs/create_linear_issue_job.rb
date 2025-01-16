@@ -96,7 +96,7 @@ class CreateLinearIssueJob < BaseJob
     # NOTE: the client assumes the structure and uniqueness of this event name
     event_name = "linear-issue-create:#{subject_type}:#{subject_public_id}"
 
-    Pusher.trigger(
+    PusherStub.trigger(
       member.user.channel_name,
       event_name,
       payload,

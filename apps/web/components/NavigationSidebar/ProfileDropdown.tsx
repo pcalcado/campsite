@@ -172,8 +172,8 @@ export function ProfileDropdown({
       external: true,
       url:
         !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
-          ? 'http://admin.campsite.test:3001/admin/features/'
-          : 'https://admin.campsite.com/admin/features'
+          ? 'http://localhost:3000/admin/features/'
+          : 'https://localhost:3000/admin/features'
     },
     isStaff && { type: 'separator' },
     {

@@ -40,7 +40,7 @@ class MessageJob < BaseJob
     socket_id = message.system? ? nil : Current.pusher_socket_id
 
     begin
-      Pusher.trigger(
+      PusherStub.trigger(
         to_member.user.channel_name,
         event_name,
         payload,
@@ -53,7 +53,7 @@ class MessageJob < BaseJob
           message_thread_id: message.message_thread.public_id,
           organization_slug: message.message_thread.organization_slug,
         }
-        Pusher.trigger(
+        PusherStub.trigger(
           to_member.user.channel_name,
           "invalidate-thread",
           fallback_payload,

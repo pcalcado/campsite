@@ -53,11 +53,11 @@ class GeneratePostTldrJob < BaseJob
     # NOTE: the client assumes the structure and uniqueness of this event name
     event_name = "post-tldr-generation:#{post_public_id}"
 
-    Pusher.trigger(
-      member.user.channel_name,
-      event_name,
-      payload,
-      { socket_id: Current.pusher_socket_id }.compact,
-    )
+    # PusherStub.trigger(
+    #   member.user.channel_name,
+    #   event_name,
+    #   payload,
+    #   { socket_id: Current.pusher_socket_id }.compact,
+    # )
   end
 end

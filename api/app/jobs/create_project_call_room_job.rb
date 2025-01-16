@@ -10,7 +10,7 @@ class CreateProjectCallRoomJob < BaseJob
     project.member_users.each do |user|
       # Call Pusher directly. PusherTriggerJob skips sending events to the
       # user that triggered the event via socket_id, which we don't want here.
-      Pusher.trigger(
+      PusherStub.trigger(
         user.channel_name,
         "project-updated",
         {

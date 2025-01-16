@@ -10,7 +10,7 @@ class CreateMessageThreadCallRoomJob < BaseJob
     thread.organization_memberships.each do |member|
       # Call Pusher directly. PusherTriggerJob skips sending events to the
       # user that triggered the event via socket_id, which we don't want here.
-      Pusher.trigger(
+      PusherStub.trigger(
         member.user.channel_name,
         "thread-updated",
         {

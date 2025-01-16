@@ -80,11 +80,11 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
-  config.hosts << "admin.campsite.test"
-  config.hosts << "auth.campsite.test"
-  config.hosts << "api.campsite.test"
-  config.hosts << "campsite.test"
-  config.hosts << /.+\.campsite\.design/
-  config.hosts << /.+\.campsite\.co/
-  config.hosts << /.+\.campsite\.com/
+  #config.hosts << "admin.campsite.test"
+  config.hosts << "localhost"
+  #config.hosts << "api.campsite.test"
+  #config.hosts << "campsite.test"
+  #config.hosts << /.+\.campsite\.design/
+  #config.hosts << /.+\.campsite\.co/
+  #config.hosts << /.+\.campsite\.com/
 end

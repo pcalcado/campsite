@@ -14,7 +14,7 @@ class UpdateStatusJob < BaseJob
     }
 
     all_members.each do |to_member|
-      Pusher.trigger(
+      PusherStub.trigger(
         to_member.user.channel_name,
         "update-status",
         payload,

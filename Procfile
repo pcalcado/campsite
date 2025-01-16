@@ -3,7 +3,7 @@ api-js: cd api && yarn build --watch
 api-app-css: cd api && yarn build:app:css --watch
 api-mailer-css: cd api && yarn build:mailer:css --watch
 api-worker: cd api && bundle exec sidekiq -C config/sidekiq.yml
-redis: cd api && redis-server
+#redis: cd api && redis-server
 ngrok: cd api && USER_CONFIG=`ngrok config check | sed -n -e 's/Valid configuration file at //p'` && ngrok start campsite campsite-api campsite-sync --config "$USER_CONFIG" --config ngrok.yaml
 site: npx turbo run dev --filter=@campsite/site --log-prefix=none
 web: npx turbo run dev --filter=@campsite/web --log-prefix=none

@@ -4,8 +4,11 @@ module Api
   module V1
     class BaseController < ActionController::API
       class FigmaUnauthorizedAccess < StandardError; end
+
       class SyncUnauthorizedAccess < StandardError; end
+
       class CalDotComUnauthorizedAccess < StandardError; end
+
       include Pundit::Authorization
       include ActionController::MimeResponds
       include CurrentAttributable
@@ -50,6 +53,10 @@ module Api
         render(status: status, json: error_json)
       end
 
+      def current_user
+        User.find_by(id: 1)
+      end
+
       def render_json(serializer, resource, opts = {})
         opts[:user] = current_user
         opts[:member] = safe_current_organization_membership
@@ -57,7 +64,7 @@ module Api
       end
 
       def require_authenticated_user
-        return if user_signed_in?
+        return true
 
         respond_to do |format|
           format.html do
@@ -103,11 +110,12 @@ module Api
       end
 
       def current_organization_membership
+        current_user ||= User.find_by(id: 1)
         @current_organization_membership ||= current_user
-          &.kept_organization_memberships
-          &.joins(:organization)
-          &.eager_load(:latest_status, organization: [:enforce_two_factor_authentication_setting])
-          &.find_by(organization: { slug: params[:org_slug] })
+                                               &.kept_organization_memberships
+                                               &.joins(:organization)
+                                               &.eager_load(:latest_status, organization: [:enforce_two_factor_authentication_setting])
+                                               &.find_by(organization: { slug: "frontier-forest" }) # params[:org_slug] })
       end
 
       def safe_current_organization_membership

@@ -59,7 +59,7 @@ class GeneratePostResolutionJob < BaseJob
       event_name += ":#{comment_public_id}"
     end
 
-    Pusher.trigger(
+    PusherStub.trigger(
       member.user.channel_name,
       event_name,
       payload,
