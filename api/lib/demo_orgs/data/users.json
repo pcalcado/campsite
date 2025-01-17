@@ -1,70 +1,52 @@
 [
   {
-    "name": "Ranger Rick",
-    "avatar_path": "o/dev-seed-files/avatar-ranger-rick.png",
-    "internal_description": "owner"
+    "name": "Marco",
+    "avatar_path": "o/dev-seed-files/avatar-marco.png",
+    "internal_description":"owner"
   },
   {
-    "name": "Brooke Rivers",
-    "avatar_path": "o/dev-seed-files/avatar-brooke-rivers.png",
-    "internal_description": "special projects"
+    "name": "Jane",
+    "avatar_path": "o/dev-seed-files/avatar-jane.png",
+    "internal_description": "Engineering Manager for the App Team"
   },
   {
-    "name": "Cliff Rockwell",
-    "avatar_path": "o/dev-seed-files/avatar-cliff-rockwell.png",
-    "internal_description": "security"
+    "name": "Ana",
+    "avatar_path": "o/dev-seed-files/avatar-ana.png",
+    "internal_description": "Senior Product Manager for the App Team"
   },
   {
-    "name": "Daisy Meadows",
-    "avatar_path": "o/dev-seed-files/avatar-daisy-meadows.png",
-    "internal_description": "landscaping"
+    "name": "Nala",
+    "avatar_path": "o/dev-seed-files/avatar-nala.png",
+    "internal_description": "Senior Designer in the App Team"
   },
   {
-    "name": "Willow Carter",
-    "avatar_path": "o/dev-seed-files/avatar-willow-carter.png",
-    "internal_description": "finance"
+    "name": "Luka",
+    "avatar_path": "o/dev-seed-files/avatar-luka.png",
+    "internal_description": "Junior Front-end Engineer in the App Team"
   },
   {
-    "name": "Sierra Peaks",
-    "avatar_path": "o/dev-seed-files/avatar-sierra-peaks.png",
-    "internal_description": "safety"
+    "name": "Bob",
+    "avatar_path": "o/dev-seed-files/avatar-bob.png",
+    "internal_description": "Staff Back-end Engineer in the API Team"
   },
   {
-    "name": "Reed Marsh",
-    "avatar_path": "o/dev-seed-files/avatar-reed-marsh.png",
-    "internal_description": "maintenance"
+    "name": "Lucy",
+    "avatar_path": "o/dev-seed-files/avatar-lucy.png",
+    "internal_description": "Junior Back-end Engineer in the API Team"
   },
   {
-    "name": "Autumn Hayes",
-    "avatar_path": "o/dev-seed-files/avatar-autumn-hayes.png",
-    "internal_description": "education"
+    "name": "Shiv",
+    "avatar_path": "o/dev-seed-files/avatar-shiv.png",
+    "internal_description": "Staff Engineer in the Infrastructure Team"
   },
   {
-    "name": "Sage Woods",
-    "avatar_path": "o/dev-seed-files/avatar-sage-woods.png",
-    "internal_description": "people"
+    "name": "Mark",
+    "avatar_path": "o/dev-seed-files/avatar-mark.png",
+    "internal_description": "Engineering Manager for the Infrastructure Team"
   },
   {
-    "name": "Misty Vale",
-    "avatar_path": "o/dev-seed-files/avatar-misty-vale.png",
-    "internal_description": "visitors"
-  },
-  {
-    "name": "Sunny Fields",
-    "avatar_path": "o/dev-seed-files/avatar-sunny-fields.png"
-  },
-  {
-    "name": "Hunter Cooper",
-    "avatar_path": "o/dev-seed-files/avatar-hunter-cooper.png"
-  },
-  {
-    "name": "Hazel Nutt",
-    "avatar_path": "o/dev-seed-files/avatar-hazel-nutt.png",
-    "internal_description": "invitee"
-  },
-  {
-    "name": "Amber Glade",
-    "avatar_path": "o/dev-seed-files/avatar-amber-glade.png",
-    "internal_description": "membership_requests"
+    "name": "Karl",
+    "avatar_path": "o/dev-seed-files/avatar-karl.png",
+    "internal_description": "Head of Marketing"
   }
 ]

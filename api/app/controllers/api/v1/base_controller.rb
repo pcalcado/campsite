@@ -115,7 +115,7 @@ module Api
                                                &.kept_organization_memberships
                                                &.joins(:organization)
                                                &.eager_load(:latest_status, organization: [:enforce_two_factor_authentication_setting])
-                                               &.find_by(organization: { slug: "frontier-forest" }) # params[:org_slug] })
+                                               &.find_by(organization: { slug: "bmtech" }) # params[:org_slug] })
       end
 
       def safe_current_organization_membership

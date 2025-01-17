@@ -2,8 +2,8 @@
 
 module DemoOrgs
   class Generator
-    ORG_NAME = "Frontier Forest"
-    ORG_SLUG = "frontier-forest"
+    ORG_NAME = "ByteME Technologies"
+    ORG_SLUG = "bmtech"
     ORG_AVATAR = "o/dev-seed-files/forest_org_icon.png"
 
     # TODO: randomly generate this for fake users
@@ -405,6 +405,8 @@ module DemoOrgs
           generated_title_status: :completed,
           generated_summary_status: :completed,
         )
+
+        call.project = locate_project(@org, c["project"]) if c["project"]
 
         peers = members.map do |m|
           call.peers.create!(

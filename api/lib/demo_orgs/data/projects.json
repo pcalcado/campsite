@@ -1,113 +1,107 @@
 [
   {
-    "name": "Park Rangers",
+    "name": "New Web App",
     "private": true,
-    "description": null,
-    "accessory": "🤠",
+    "description": "Development of the new React-based web app.",
+    "accessory": "💻",
     "members": [
-      "Ranger Rick",
-      "Brooke Rivers"
+      "Marco",
+      "Jane",
+      "Ana",
+      "Nala",
+      "Luka"
     ],
     "favorites": [
-      "Ranger Rick",
-      "Brooke Rivers"
+      "Jane",
+      "Ana"
     ]
   },
   {
-    "name": "Maintenance Requests",
-    "description": null,
+    "name": "API Performance Improvement",
+    "description": "Enhancing API performance to improve user experience.",
+    "accessory": "🚀",
+    "members": [
+      "Marco",
+      "Bob"
+    ],
+    "favorites": [
+      "Marco",
+      "Bob"
+    ]
+  },
+  {
+    "name": "Kubernetes Migration",
+    "description": "Containerization and migration to Kubernetes for scalability.",
+    "accessory": "☁️",
+    "members": [
+      "Marco",
+      "Mark",
+      "Shiv"
+    ]
+  },
+  {
+    "name": "Marketing Campaign",
+    "description": "Planning and execution of the marketing campaign for the new web app.",
+    "accessory": "📣",
+    "members": [
+      "Marco",
+      "Karl",
+      "Ana"
+    ],
+    "favorites": [
+      "Karl"
+    ]
+  },
+  {
+    "name": "Design Review",
+    "description": "Review and finalization of UI/UX designs.",
+    "accessory": "🎨",
+    "members": [
+      "Marco",
+      "Nala",
+      "Jane",
+      "Ana"
+    ],
+    "favorites": [
+      "Nala"
+    ]
+  },
+  {
+    "name": "Infrastructure Improvements",
+    "description": "Long-term improvements for system scalability and reliability.",
     "accessory": "🔧",
     "members": [
-      "Reed Marsh"
+      "Marco",
+      "Mark",
+      "Shiv"
     ]
   },
   {
-    "name": "Trail Reports",
-    "is_default": true,
-    "description": null,
-    "accessory": "🗺️",
-    "favorites": [
-      "Ranger Rick",
-      "Brooke Rivers",
-      "Reed Marsh",
-      "Sage Woods"
-    ]
-  },
-  {
-    "name": "Grant Writing",
-    "accessory": "💰",
-    "description": "Resources and tips for grant writing.",
+    "name": "API Support",
+    "description": "Ongoing support and collaboration with the API team.",
+    "accessory": "📡",
     "members": [
-      "Ranger Rick",
-      "Willow Carter",
-      "Sunny Fields",
-      "Autumn Hayes"
+      "Marco",
+      "Jane",
+      "Luka",
+      "Bob",
+      "Lucy"
     ]
   },
   {
-    "name": "PR & Media Relations",
-    "description": null,
-    "accessory": "📰",
+    "name": "Beta Launch Plan",
+    "description": "Planning and execution of the phased beta launch.",
+    "accessory": "🚧",
     "members": [
-      "Ranger Rick",
-      "Brooke Rivers"
-    ]
-  },
-  {
-    "name": "2024 Budget Planning",
-    "description": null,
-    "accessory": "💸",
-    "members": [
-      "Ranger Rick"
-    ]
-  },
-  {
-    "name": "Photo Stream",
-    "is_default": true,
-    "accessory": "🌄",
-    "description": "Share your favorite park photos!",
-    "members": [
-      "Misty Vale"
-    ]
-  },
-  {
-    "name": "Staff Lounge",
-    "is_default": true,
-    "accessory": "🍕",
-    "description": "A place to chat about non-work stuff.",
-    "members": [],
-    "favorites": [
-      "Ranger Rick",
-      "Daisy Meadows",
-      "Sunny Fields"
-    ]
-  },
-  {
-    "name": "Gear Talk",
-    "accessory": "🥾",
-    "description": null,
-    "members": [
-      "Ranger Rick"
-    ]
-  },
-  {
-    "name": "2023 Annual Report",
-    "description": null,
-    "accessory": "",
-    "members": [
-      "Ranger Rick"
+      "Marco",
+      "Jane",
+      "Ana",
+      "Nala",
+      "Luka"
     ],
-    "archived": true
-  },
-  {
-    "name": "Reservations",
-    "description": "View latest campground reservations.",
-    "accessory": "📅",
-    "members": [
-      "Ranger Rick",
-      "Misty Vale",
-      "Reed Marsh",
-      "Daisy Meadows"
+    "favorites": [
+      "Jane",
+      "Ana"
     ]
   }
 ]

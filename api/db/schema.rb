@@ -442,6 +442,16 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_12_002307) do
     t.index ["subject_type", "subject_id"], name: "index_follow_ups_on_subject"
   end
 
+  create_table "follows", id: { type: :bigint, unsigned: true }, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "follower_id", null: false, unsigned: true
+    t.string "followed_type"
+    t.bigint "followed_id", unsigned: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["followed_type", "followed_id", "follower_id"], name: "index_follows_on_followed_type_and_followed_id_and_follower_id", unique: true
+    t.index ["followed_type", "followed_id"], name: "index_follows_on_followed"
+  end
+
   create_table "friendly_id_slugs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -1002,6 +1012,20 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_12_002307) do
     t.index ["public_id"], name: "index_polls_on_public_id", unique: true
   end
 
+  create_table "post_comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "public_id", limit: 12, null: false
+    t.text "body", null: false
+    t.bigint "user_id", null: false, unsigned: true
+    t.bigint "post_id", null: false, unsigned: true
+    t.bigint "post_file_id", unsigned: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_file_id"], name: "index_post_comments_on_post_file_id"
+    t.index ["post_id"], name: "index_post_comments_on_post_id"
+    t.index ["public_id"], name: "index_post_comments_on_public_id", unique: true
+    t.index ["user_id"], name: "index_post_comments_on_user_id"
+  end
+
   create_table "post_digest_basic_posts", id: { type: :bigint, unsigned: true }, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "post_id", null: false, unsigned: true
     t.bigint "post_digest_id", null: false, unsigned: true
@@ -1069,6 +1093,18 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_12_002307) do
     t.index ["public_id"], name: "index_post_feedback_requests_on_public_id", unique: true
   end
 
+  create_table "post_files", id: { type: :bigint, unsigned: true }, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "public_id", limit: 12, null: false
+    t.string "file_path", null: false
+    t.string "file_type", null: false
+    t.bigint "post_id", null: false, unsigned: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "preview_file_path"
+    t.index ["post_id"], name: "index_post_files_on_post_id"
+    t.index ["public_id"], name: "index_post_files_on_public_id", unique: true
+  end
+
   create_table "post_hierarchies", id: false, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "ancestor_id", null: false
     t.integer "descendant_id", null: false
@@ -1103,6 +1139,18 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_12_002307) do
     t.datetime "updated_at", null: false
     t.index ["post_id"], name: "index_post_links_on_post_id"
     t.index ["public_id"], name: "index_post_links_on_public_id", unique: true
+  end
+
+  create_table "post_reactions", id: { type: :bigint, unsigned: true }, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "public_id", limit: 12, null: false
+    t.string "content", null: false
+    t.bigint "post_id", null: false, unsigned: true
+    t.bigint "user_id", null: false, unsigned: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_post_reactions_on_post_id"
+    t.index ["public_id"], name: "index_post_reactions_on_public_id", unique: true
+    t.index ["user_id"], name: "index_post_reactions_on_user_id"
   end
 
   create_table "post_taggings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

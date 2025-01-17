@@ -1,123 +1,117 @@
 [
   {
-    "owner": "Ranger Rick",
+    "owner": "Jane",
     "members": [
-      "Brooke Rivers"
+      "Ana",
+      "Luka",
+      "Nala"
     ],
     "favorites": [
-      "Ranger Rick"
+      "Jane",
+      "Ana"
     ],
     "messages": [
       {
-        "user": "Ranger Rick",
-        "content": "<p>Hey Brooke, could you help me review the latest trail map?</p>"
+        "user": "Jane",
+        "content": "<p>Hey team, how’s progress on the new web app? Any blockers?</p>"
       },
       {
-        "user": "Brooke Rivers",
-        "content": "<p>Sure thing! I'll take a look and get back to you by the end of the day.</p>",
+        "user": "Luka",
+        "content": "<p>The React implementation is mostly done, but we’re facing some performance issues with the API.</p>"
+      },
+      {
+        "user": "Ana",
+        "content": "<p>Let me follow up with Bob’s team to prioritize the API fixes.</p>",
         "reactions": [
           {
-            "user": "Ranger Rick",
+            "user": "Jane",
             "content": "👍"
+          }
+        ]
+      },
+      {
+        "user": "Nala",
+        "content": "<p>I’m finalizing the UI designs. Do we have any updates on the animations from Pixel Perfect?</p>"
+      },
+      {
+        "user": "Jane",
+        "content": "<p>Nala, let’s keep it simple for the beta. We can add the animations post-launch.</p>",
+        "reactions": [
+          {
+            "user": "Nala",
+            "content": "❤️"
           }
         ]
       }
     ]
   },
   {
-    "title": "Red Alert",
-    "owner": "Ranger Rick",
-    "favorites": [
-      "Ranger Rick",
-      "Reed Marsh"
-    ],
-    "image_path": "o/dev-seed-files/thread-icon-red-alert.png",
+    "title": "API Performance Issues",
+    "owner": "Bob",
     "members": [
-      "Brooke Rivers",
-      "Cliff Rockwell",
-      "Daisy Meadows",
-      "Willow Carter",
-      "Sierra Peaks",
-      "Reed Marsh",
-      "Autumn Hayes",
-      "Sage Woods",
-      "Misty Vale",
-      "Sunny Fields",
-      "Hunter Cooper"
+      "Lucy",
+      "Jane",
+      "Luka"
     ],
     "messages": [
       {
-        "user": "Ranger Rick",
-        "content": "<p>Hey team, just got a report of a downed tree blocking the western trail. We need to clear it ASAP.</p>"
+        "user": "Bob",
+        "content": "<p>I’m working on optimizing the legacy system for SLA calculations. Should have an update by EOD.</p>"
       },
       {
-        "user": "Cliff Rockwell",
-        "content": "<p>I'll grab the chainsaw and head out there. Should we reroute hikers in the meantime?</p>"
-      },
-      {
-        "user": "Autumn Hayes",
-        "content": "<p>Good idea, Cliff. I'll update the trail status on the website and put up some signs at the trailhead.</p>"
-      },
-      {
-        "user": "Brooke Rivers",
-        "content": "<p>I can assist Cliff with the tree removal. Should I bring anything?</p>"
-      },
-      {
-        "user": "Ranger Rick",
-        "content": "<p>Some cones to mark off the area would be great.</p>",
+        "user": "Luka",
+        "content": "<p>Thanks, Bob! This will help a lot with the ticket submission speed.</p>",
         "reactions": [
           {
-            "user": "Brooke Rivers",
+            "user": "Bob",
             "content": "👍"
           }
         ]
       },
       {
-        "user": "Reed Marsh",
-        "content": "<p>I'm near the western trail now, I'll hang around in case any hikers come by.</p>",
+        "user": "Jane",
+        "content": "<p>Bob, let us know if you need additional resources from our team.</p>",
         "reactions": [
           {
-            "user": "Ranger Rick",
+            "user": "Bob",
             "content": "🙏"
           }
         ]
+      }
+    ]
+  },
+  {
+    "title": "Kubernetes Migration Plan",
+    "owner": "Mark",
+    "members": [
+      "Shiv",
+      "Jane",
+      "Ana",
+      "Luka"
+    ],
+    "messages": [
+      {
+        "user": "Mark",
+        "content": "<p>We’re ready to start the app migration to Kubernetes. Jane, can your team containerize the app?</p>"
       },
       {
-        "user": "Autumn Hayes",
-        "content": "<p>Thanks, Reed!</p>"
+        "user": "Jane",
+        "content": "<p>Mark, we’re focusing on the beta launch first. Can this wait until post-launch?</p>"
       },
       {
-        "user": "Cliff Rockwell",
-        "content": "<p>On my way now. Rick, can you coordinate with the visitor's center to inform incoming guests?</p>"
+        "user": "Shiv",
+        "content": "<p>We can help with some guidance or tooling if needed. Let us know what works.</p>"
       },
       {
-        "user": "Ranger Rick",
-        "content": "👍🫡"
+        "user": "Ana",
+        "content": "<p>If it’s not critical for the launch, let’s prioritize it afterward.</p>"
       },
       {
-        "user": "Reed Marsh",
-        "content": "<p>Met some hikers, they were understanding about the detour. Safety first!</p>",
+        "user": "Mark",
+        "content": "<p>Understood. Let’s sync after the beta launch to schedule this.</p>",
         "reactions": [
           {
-            "user": "Cliff Rockwell",
-            "content": "❤️"
-          }
-        ]
-      },
-      {
-        "user": "Ranger Rick",
-        "content": "<p>Great teamwork, everyone. Keep me updated on the progress.</p>",
-        "reactions": [
-          {
-            "user": "Cliff Rockwell",
-            "content": "❤️"
-          },
-          {
-            "user": "Autumn Hayes",
-            "content": "❤️"
-          },
-          {
-            "user": "Brooke Rivers",
+            "user": "Jane",
             "content": "👍"
           }
         ]
@@ -125,52 +119,76 @@
     ]
   },
   {
-    "title": "Weather Report",
-    "owner": "Ranger Rick",
+    "title": "Beta Launch Prep",
+    "owner": "Jane",
     "members": [
-      "Brooke Rivers",
-      "Cliff Rockwell",
-      "Sierra Peaks",
-      "Reed Marsh"
+      "Ana",
+      "Nala",
+      "Luka"
+    ],
+    "favorites": [
+      "Jane",
+      "Ana"
     ],
     "messages": [
       {
-        "oauth_provider": "zapier",
-        "content": "<p>🌩️ <strong>Weather Alert:</strong> Potential thunderstorm detected. 30% chance of occurrence within the next 12 hours.</p>"
+        "user": "Ana",
+        "content": "<p>We should finalize the features for the beta launch. Can we meet tomorrow?</p>"
       },
       {
-        "oauth_provider": "zapier",
-        "content": "<p>⚠️ <strong>Update:</strong> Thunderstorm probability increased to 60%. Potential for heavy rainfall and strong winds within the next 6 hours.</p>"
-      },
-      {
-        "user": "Cliff Rockwell",
-        "content": "<p>cc <span class=\"mention\" data-type=\"mention\" data-id=\"rsov90kley56\" data-label=\"Ranger Rick\" data-username=\"ranger_rick\">@Ranger Rick</span></p>",
+        "user": "Nala",
+        "content": "<p>Yes, I’ll prepare a draft of the UI updates for the meeting.</p>",
         "reactions": [
           {
-            "user": "Ranger Rick",
-            "content": "👀"
+            "user": "Ana",
+            "content": "👍"
           }
         ]
       },
       {
-        "oauth_provider": "zapier",
-        "content": "<p>🌪️ <strong>Alert:</strong> Severe thunderstorm warning issued. 80% chance of heavy rainfall, strong winds, and lightning within the next 2 hours.</p>"
+        "user": "Luka",
+        "content": "<p>I’ll focus on fixing the high-priority API issues before the beta launch.</p>"
       },
       {
-        "oauth_provider": "zapier",
-        "content": "<p>⛈️ <strong>Update:</strong> Thunderstorm now in progress. Heavy rainfall and frequent lightning reported.</p>"
-      },
-      {
-        "oauth_provider": "zapier",
-        "content": "<p>🌤️ <strong>Alert:</strong> Thunderstorm warning lifted. Conditions expected to improve over the next hour.</p>"
-      },
-      {
-        "user": "Ranger Rick",
-        "content": "<p>Looks like we're in the clear. <span class=\"mention\" data-type=\"mention\" data-id=\"t8w9inw4hxoe\" data-label=\"Reed Marsh\" data-username=\"reed_marsh\">@Reed Marsh</span> can you check the trails for any damage?</p>",
+        "user": "Jane",
+        "content": "<p>Great! Let’s aim to have everything ready by the end of the week.</p>",
         "reactions": [
           {
-            "user": "Reed Marsh",
-            "content": "🫡"
+            "user": "Ana",
+            "content": "❤️"
+          },
+          {
+            "user": "Nala",
+            "content": "❤️"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Marketing Update",
+    "owner": "Karl",
+    "members": [
+      "Jane",
+      "Ana",
+      "Nala"
+    ],
+    "messages": [
+      {
+        "user": "Karl",
+        "content": "<p>Marketing needs an update on the beta launch timeline. When can we share it with the PR team?</p>"
+      },
+      {
+        "user": "Jane",
+        "content": "<p>We’re targeting a 2-week delay for the beta. I’ll confirm with Ana and Luka.</p>"
+      },
+      {
+        "user": "Ana",
+        "content": "<p>Karl, we’ll have a finalized timeline by the end of this week.</p>",
+        "reactions": [
+          {
+            "user": "Karl",
+            "content": "👍"
           }
         ]
       }
