@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class CallPeer < ApplicationRecord
+  include Outropy::AutoIngest
   belongs_to :call, inverse_of: :peers
   belongs_to :organization_membership, optional: true
   belongs_to :user, optional: true

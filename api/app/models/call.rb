@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Call < ApplicationRecord
+  include Outropy::AutoIngest
   include PublicIdGenerator
   include SearchConfigBuilder
   include Pinnable

@@ -10,6 +10,7 @@ class CallRecording < ApplicationRecord
 
   include PublicIdGenerator
   include ImgixUrlBuilder
+  include Outropy::AutoIngest
 
   belongs_to :call
   has_many :speakers, class_name: "CallRecordingSpeaker", dependent: :destroy_async
@@ -77,13 +78,13 @@ class CallRecording < ApplicationRecord
 
     section_htmls = ordered_sections.map do |section|
       h2 = case section.section
-      when "summary"
-        nil
-      when "agenda"
-        nil
-      when "next_steps"
-        "<h2>Next steps</h2>"
-      end
+           when "summary"
+             nil
+           when "agenda"
+             nil
+           when "next_steps"
+             "<h2>Next steps</h2>"
+           end
 
       [h2, section.response]
     end
@@ -165,13 +166,20 @@ class CallRecording < ApplicationRecord
       return
     end
 
-    create_pending_summary_sections!.each do |section|
-      if delay
-        GenerateCallRecordingSummarySectionJob.perform_in(delay.from_now, section.id)
-      else
-        GenerateCallRecordingSummarySectionJob.perform_async(section.id)
-      end
+    create_pending_summary_sections!
+    if delay
+      GenerateCallRecordingSummarySectionJob.perform_in(delay.from_now, id)
+    else
+      GenerateCallRecordingSummarySectionJob.perform_async(id)
     end
+
+    # create_pending_summary_sections!.each do |section|
+    #   if delay
+    #     GenerateCallRecordingSummarySectionJob.perform_in(delay.from_now, section.id)
+    #   else
+    #     GenerateCallRecordingSummarySectionJob.perform_async(section.id)
+    #   end
+    # end
   end
 
   def export_file_name

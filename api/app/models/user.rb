@@ -8,6 +8,7 @@ class User < ApplicationRecord
   include PublicIdGenerator
   include ImgixUrlBuilder
   include Tokenable
+  include Outropy::AutoIngest
 
   DEV_APP_PROTOCOL = "campsite-dev://"
   PROD_APP_PROTOCOL = "campsite://"

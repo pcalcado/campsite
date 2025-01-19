@@ -25,6 +25,7 @@ class Post < ApplicationRecord
   include AttachmentsReorderable
   include WorkflowActiverecord
   include ResourceMentionable
+  include Outropy::AutoIngest
 
   belongs_to :member, class_name: "OrganizationMembership", foreign_key: :organization_membership_id, optional: true
   belongs_to :integration, optional: true

@@ -13,6 +13,7 @@ class Comment < ApplicationRecord
   include Referenceable
   include AttachmentsReorderable
   include ResourceMentionable
+  include Outropy::AutoIngest
 
   FILE_LIMIT = 10
   PUBLIC_API_ALLOWED_ORDER_FIELDS = [:created_at]

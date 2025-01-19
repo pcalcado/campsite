@@ -17,6 +17,7 @@ class Note < ApplicationRecord
   include Referenceable
   include AttachmentsReorderable
   include ResourceMentionable
+  include Outropy::AutoIngest
 
   FILE_LIMIT = Float::INFINITY
 

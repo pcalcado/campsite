@@ -48,6 +48,9 @@ Rails.application.configure do
   #   api_token: Rails.application.credentials&.postmark&.api_token,
   # }
 
+  # Set elvel to :info
+  config.log_level = :info
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
@@ -71,6 +74,9 @@ Rails.application.configure do
   # disable asset fingerprinting so changes are picked up immediately
   config.assets.digest = false
 
+  Rails.backtrace_cleaner.remove_silencers!
+  config.consider_all_requests_local = true
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
@@ -80,11 +86,11 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
-  #config.hosts << "admin.campsite.test"
+  # config.hosts << "admin.campsite.test"
   config.hosts << "localhost"
-  #config.hosts << "api.campsite.test"
-  #config.hosts << "campsite.test"
-  #config.hosts << /.+\.campsite\.design/
-  #config.hosts << /.+\.campsite\.co/
-  #config.hosts << /.+\.campsite\.com/
+  # config.hosts << "api.campsite.test"
+  # config.hosts << "campsite.test"
+  # config.hosts << /.+\.campsite\.design/
+  # config.hosts << /.+\.campsite\.co/
+  # config.hosts << /.+\.campsite\.com/
 end

@@ -9,6 +9,7 @@ class Project < ApplicationRecord
   include Eventable
   include ActionView::Helpers::UrlHelper
   include Tokenable
+  include Outropy::AutoIngest
 
   ORG_DEFAULT_PROJECTS = [
     {

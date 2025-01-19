@@ -165,6 +165,8 @@ GEM
     erubi (1.13.0)
     et-orbi (1.2.11)
       tzinfo
+    ethon (0.16.0)
+      ffi (>= 1.15.0)
     event_stream_parser (1.0.0)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
@@ -185,6 +187,7 @@ GEM
     faraday-net_http (3.1.0)
       net-http
     fastimage (2.2.6)
+    ffi (1.17.1-arm64-darwin)
     flipper (1.0.0)
       brow (~> 0.4.1)
       concurrent-ruby (< 2)
@@ -303,6 +306,8 @@ GEM
       commonmarker (~> 0.17)
     openssl (3.2.0)
     orm_adapter (0.5.0)
+    outropy-rails (0.1.0)
+      typhoeus (~> 1.0, >= 1.0.1)
     parallel (1.24.0)
     parser (3.3.4.2)
       ast (~> 2.4.1)
@@ -483,6 +488,8 @@ GEM
     timecop (0.9.6)
     timeout (0.4.1)
     trilogy (2.8.1)
+    typhoeus (1.4.1)
+      ethon (>= 0.9.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
@@ -571,6 +578,7 @@ DEPENDENCIES
   omniauth-google-oauth2
   omniauth-rails_csrf_protection
   openapi3_parser
+  outropy-rails (= 0.1.0)
   planetscale_rails
   postmark-rails
   premailer-rails
@@ -603,6 +611,7 @@ DEPENDENCIES
   swearjar
   timecop
   trilogy
+  typhoeus (~> 1.0, >= 1.0.1)
   tzinfo-data
   userlist-rails
   vcr

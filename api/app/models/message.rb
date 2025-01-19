@@ -6,6 +6,7 @@ class Message < ApplicationRecord
   include PublicIdGenerator
   include Reactable
   include ActionView::Helpers::SanitizeHelper
+  include Outropy::AutoIngest
 
   FILE_LIMIT = 10
 
